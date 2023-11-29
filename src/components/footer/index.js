@@ -4,29 +4,57 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import footerLogo from "../../assets/image/turaresearchfooter.png";
+import { CiLocationOn } from "react-icons/ci";
+import { FiPhoneCall } from "react-icons/fi";
+import { TbMailOpened } from "react-icons/tb";
 
 const Footer = () => {
   return (
     <div className="footer_background text-white">
       <div className="container mx-auto">
-        <div className="flex gap-8 justify-around flex-col font-semibold md:flex-row text-white items-start pt-12">
-          <div className="flex w-40 gap-4 flex-col">
-            <div className="font-semibold">
-              Site Map
-              <span className="border-b mt-4 border-gray-400 flex" />
+        <div className="flex gap-8 justify-between flex-col md:flex-row text-white items-start pt-12">
+          <div className="flex gap-4 flex-col">
+            <div className="">
+              <img src={footerLogo} className="w-40" alt="Tura Research" />
             </div>
             <ul className="list-none gap-1 flex flex-col">
-              <li>About Me</li>
-              <li>Revolutionizing society</li>
+              <li className="font-semibold">India</li>
+              <li className="flex gap-4 items-center">
+                <CiLocationOn /> Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec tincidunt, orci a varius
+              </li>
+              <li className="flex gap-4 items-center">
+                <FiPhoneCall /> +91 99999 99999
+              </li>
+              <li className="flex gap-4 items-center">
+                <TbMailOpened /> info@turaresearch.com
+              </li>
+              <li className="pt-4 font-semibold">Canada</li>
+              <li className="flex gap-4 items-center">
+                <CiLocationOn /> Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec tincidunt, orci a varius
+              </li>
+              <li className="flex gap-4 items-center">
+                <FiPhoneCall /> +91 99999 99999
+              </li>
+              <li className="flex gap-4 items-center">
+                <TbMailOpened /> info@turaresearch.com
+              </li>
             </ul>
           </div>
-          <div className="flex w-40 gap-4 flex-col">
-            <div className="font-semibold">
-              Resources
-              <span className="border-b mt-4 border-gray-400 flex" />
-            </div>
+          <div className="flex w-48 gap-4 flex-col">
+            <div className="font-semibold">Resources</div>
+            <ul className="list-none flex flex-col">
+              <li>Blog</li>
+              <li>Books</li>
+              <li>Articles</li>
+              <li>Neswletter</li>
+            </ul>
+            <div className="font-semibold">Resources</div>
             <ul className="list-none flex flex-col">
               <li>Blog</li>
               <li>Books</li>
@@ -34,11 +62,14 @@ const Footer = () => {
               <li>Neswletter</li>
             </ul>
           </div>
-          <div className="flex w-40 gap-4 flex-col">
-            <div className="font-semibold">
-              Help & Support
-              <span className="border-b mt-4 border-gray-400 flex" />
-            </div>
+          <div className="flex w-48 gap-4 flex-col">
+            <div className="font-semibold">Help & Support</div>
+            <ul className="list-none flex gap-1 flex-col">
+              <li>Reach Out to Me</li>
+              <li>Terms of Services</li>
+              <li>Privacy Policy</li>
+            </ul>
+            <div className="font-semibold">Help & Support</div>
             <ul className="list-none flex gap-1 flex-col">
               <li>Reach Out to Me</li>
               <li>Terms of Services</li>
@@ -47,9 +78,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex flex-col justify-center items-center py-4">
-        <div className="flex">
-          <div className="text-lg w-full my-02">Follow me on</div>
+      <div className="container flex justify-between items-center border-t py-4 border-gray-400 mb-4 mx-auto">
+        <div className="flex flex-col">
+          <div className=" text-white">
+            © Copyright 2023 - All Right Reserved
+          </div>
+          <div className="">
+            Terms of Use | Privacy Policy | Copyright Policy
+          </div>
         </div>
         <div className="flex gap-5 mt-4 icon-color">
           <span className="facebook">
@@ -72,12 +108,11 @@ const Footer = () => {
               <FaTwitter size={24} />
             </Link>
           </span>
-        </div>
-      </div>
-      <span className="border-t my-8 border-gray-400 flex" />
-      <div className="container mb-4 mx-auto">
-        <div className="text-center text-white text-sm">
-          © Copyright 2023 - All Right Reserved
+          <span className="youtube">
+            <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2Fturacoz">
+              <FaYoutube size={24} />
+            </Link>
+          </span>
         </div>
       </div>
     </div>
