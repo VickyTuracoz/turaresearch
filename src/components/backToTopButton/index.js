@@ -22,7 +22,7 @@ function BackToTopButton() {
     <button
       className={`${
         showButton ? "block" : "hidden"
-      } fixed z-50 bottom-4 right-4 backgroundRedColor text-white p-2 rounded-full cursor-pointer hover:bg-red-600 transition-colors duration-300`}
+      } fixed z-50 bottom-4 right-4 backgroundRedColor text-white p-2 rounded-full cursor-pointer hover:bg-blue-700 transition-colors duration-300`}
       onClick={scrollToTop}
     >
       <BiUpArrowAlt size={30} color="white" />

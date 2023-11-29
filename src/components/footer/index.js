@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="border-t border-gray-400">
+    <div className="footer_background text-white">
       <div className="container mx-auto">
-        <div className="flex gap-8 justify-around flex-col font-semibold md:flex-row text-gray-800 items-start pt-12">
+        <div className="flex gap-8 justify-around flex-col font-semibold md:flex-row text-white items-start pt-12">
           <div className="flex w-40 gap-4 flex-col">
             <div className="font-semibold">
               Site Map
@@ -47,17 +47,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex flex-col justify-center items-center py-8">
-        <div className="flex flex-col gap-5">
-          <div className="text-lg w-full my-02">
-            “If you care passionately enough, I believe you can improve on any
-            facet of the human experience.”
-          </div>
-          <div className="font-semibold text-lg text-center">
-            Dr. Namrata Singh
-          </div>
-        </div>
-      </div>
       <div className="container mx-auto flex flex-col justify-center items-center py-4">
         <div className="flex">
           <div className="text-lg w-full my-02">Follow me on</div>
@@ -87,7 +76,7 @@ const Footer = () => {
       </div>
       <span className="border-t my-8 border-gray-400 flex" />
       <div className="container mb-4 mx-auto">
-        <div className="text-center text-gray-600 text-sm">
+        <div className="text-center text-white text-sm">
           © Copyright 2023 - All Right Reserved
         </div>
       </div>

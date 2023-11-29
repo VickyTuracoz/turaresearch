@@ -1,25 +1,19 @@
 import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-  Navigate,
-} from "react-router-dom";
 import { Provider } from "react-redux";
+import {
+  Outlet,
+  RouterProvider,
+  createBrowserRouter
+} from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Loading from "./components/Loading";
 import Error from "./components/Error";
-import { persistor, store } from "./redux/store";
+import Loading from "./components/Loading";
 import BackToTopButton from "./components/backToTopButton";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import { persistor, store } from "./redux/store";
 const HomePage = lazy(() => import("./components/homepage"));
-const AboutMe = lazy(() => import("./components/AboutMe"));
-const ArticlePage = lazy(() => import("./components/ArticlePage"));
-const BlogPage = lazy(() => import("./components/BlogPage"));
-const BookPage = lazy(() => import("./components/BookPage"));
-const PublicationPage = lazy(() => import("./components/PublicationPage"));
 
 const App = () => {
   return (
