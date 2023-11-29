@@ -48,46 +48,6 @@ const appRoutes = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "aboutMe",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <AboutMe />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/article/:id",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <ArticlePage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/Books/:id",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <BookPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/Blogs/:id",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <BlogPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/Publication/:id",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <PublicationPage />
-          </Suspense>
-        ),
-      },
     ],
   },
 ]);
