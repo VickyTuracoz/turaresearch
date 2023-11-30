@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
         <div className="container mx-auto">
-          <div className="py-0 flex justify-center h-16 md:justify-between items-center">
+          <div className="py-2 flex justify-center md:justify-between items-center">
             <Link className="font-semibold text-xl drop-shadow-2xl" to="/">
               <img src={logo} alt="TuraResearch" className="w-36 my-2" />
             </Link>

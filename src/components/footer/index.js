@@ -23,25 +23,25 @@ const Footer = () => {
             </div>
             <ul className="list-none gap-1 flex flex-col">
               <li className="font-semibold">India</li>
-              <li className="flex gap-4 items-center">
-                <CiLocationOn /> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec tincidunt, orci a varius
+              <li className="flex gap-2 items-start w-4/5">
+                <CiLocationOn size={24} /> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Donec tincidunt, orci a varius
               </li>
-              <li className="flex gap-4 items-center">
+              <li className="flex gap-2 items-center">
                 <FiPhoneCall /> +91 99999 99999
               </li>
-              <li className="flex gap-4 items-center">
+              <li className="flex gap-2 items-center">
                 <TbMailOpened /> info@turaresearch.com
               </li>
               <li className="pt-4 font-semibold">Canada</li>
-              <li className="flex gap-4 items-center">
-                <CiLocationOn /> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec tincidunt, orci a varius
+              <li className="flex gap-2 items-start w-4/5">
+                <CiLocationOn size={24} /> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Donec tincidunt, orci a varius
               </li>
-              <li className="flex gap-4 items-center">
+              <li className="flex gap-2 items-center">
                 <FiPhoneCall /> +91 99999 99999
               </li>
-              <li className="flex gap-4 items-center">
+              <li className="flex gap-2 items-center">
                 <TbMailOpened /> info@turaresearch.com
               </li>
             </ul>
@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container flex justify-between items-center border-t py-4 border-gray-400 mb-4 mx-auto">
+      <div className="container flex justify-between items-center border-t py-4 border-gray-400 my-4 mx-auto">
         <div className="flex flex-col">
           <div className=" text-white">
             © Copyright 2023 - All Right Reserved
