@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container flex justify-between items-center border-t py-4 border-gray-400 my-4 mx-auto">
+      <div className="container flex justify-between items-center border-t py-4 border-gray-400 mt-4 mx-auto">
         <div className="flex flex-col">
           <div className=" text-white">
             © Copyright 2023 - All Right Reserved

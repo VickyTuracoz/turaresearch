@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import banner from "../../assets/image/homepageBanner.jpg";
+import banner1 from "../../assets/image/homepageBanner.png";
 import training from "../../assets/image/training.jpg";
 import publication from "../../assets/image/publication.jpg";
 import medicoMarketing from "../../assets/image/medicoMarketing.jpg";
@@ -25,11 +26,24 @@ import shruti from "../../assets/image/shruti.jpg";
 import team1 from "../../assets/image/team1.png";
 import team2 from "../../assets/image/team2.png";
 import team3 from "../../assets/image/team3.png";
+import serviceimage from "../../assets/image/service.png";
+import customer1 from "../../assets/image/customer1.jpg";
+import customer2 from "../../assets/image/customer2.jpg";
+import customer3 from "../../assets/image/customer3.jpg";
+import customer4 from "../../assets/image/customer4.jpg";
+import customer5 from "../../assets/image/customer5.jpg";
+import customer6 from "../../assets/image/customer6.jpg";
+import customer7 from "../../assets/image/customer7.jpg";
+import achievement1 from "../../assets/image/achievement1.jpg";
+import achievement2 from "../../assets/image/achievement2.jpg";
+import achievement3 from "../../assets/image/achievement3.jpg";
+import achievement4 from "../../assets/image/achievement4.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { IoTimeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa";
 
 const HomePage = () => {
   let settings = {
@@ -48,15 +62,77 @@ const HomePage = () => {
       imageSrc: banner,
     },
     {
-      imageSrc: banner,
+      imageSrc: banner1,
     },
     {
-      imageSrc: banner,
+      imageSrc: banner1,
     },
     {
-      imageSrc: banner,
+      imageSrc: banner1,
     },
   ];
+
+  const clientFeedback = [
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+    {
+      image: serviceimage,
+      name: "Pediatrician",
+      description:
+        "It was very well capsulated in terms of the content. Turacoz has the skills to curate the content and design the sessions according to the topic decided. In general, it was very good in terms of the overall content and capsulation ",
+    },
+  ];
+
+  let serviceSettings = {
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   const newsData = [
     {
       image: publication,
@@ -193,6 +269,21 @@ const HomePage = () => {
       name: "Gursimran Alagh",
       designation: "Project Lead – Learning & Development",
     },
+  ];
+  const customer = [
+    { image: customer1 },
+    { image: customer2 },
+    { image: customer3 },
+    { image: customer4 },
+    { image: customer5 },
+    { image: customer6 },
+    { image: customer7 },
+  ];
+  const achievement = [
+    { image: achievement1 },
+    { image: achievement2 },
+    { image: achievement3 },
+    { image: achievement4 },
   ];
   return (
     <>
@@ -395,7 +486,7 @@ const HomePage = () => {
           </div>
           <div>scientific communication and publication needs.</div>
         </div>
-        <div className="flex justify-between gap-2 py-4">
+        <div className="flex justify-between gap-8 py-4">
           {otherservice &&
             otherservice?.map((item, index) => {
               return (
@@ -456,19 +547,20 @@ const HomePage = () => {
             expert?.map((item, index) => {
               return (
                 <div key={index} className="flex-1 relative">
-                  <div className="relative flex flex-col h-72">
+                  <div className="relative z-0 flex flex-col h-72">
                     <img
                       src={item?.image}
-                      className="absolute z-0 h-full w-full card_image object-cover"
+                      className="absolute z-0 h-full w-full expert_image object-cover"
                       alt={item?.name}
                     />
-                    <div className="card relative z-10 h-full w-full hover:opacity-40">
-                      <div className="bg-gradient-to-t transition-all from-blue-700 to-blue-700 flex flex-col h-72 justify-end gap-2 p-4">
-                        <div className="text-white font-semibold flex gap-2 text-sm">
+                    <div className="card_text relative z-10 h-full w-full">
+                      <div className="bg-gradient-to-t absolute z-0 transition-all opacity-40 w-full from-blue-700 to-blue-700 h-72"></div>
+                      <div className="absolute z-10 justify-end gap-2 p-4 flex flex-col h-full w-full">
+                        <div className="text-white font-semibold opacity-100 flex gap-2 text-sm">
                           {item?.name}
                         </div>
-                        <div className="w-12 h-1 bg-white rounded-lg"></div>
-                        <div className="text-white text-sm">
+                        <div className="w-12 h-1 bg-white rounded-lg opacity-100"></div>
+                        <div className="text-white text-sm opacity-100">
                           {item?.designation}
                         </div>
                       </div>
@@ -478,6 +570,71 @@ const HomePage = () => {
               );
             })}
         </div>
+      </div>
+      <div className="container mx-auto">
+        <div className="flex my-6 justify-between items-center gap-2">
+          {customer &&
+            customer?.map((item, index) => {
+              return (
+                <div key={index}>
+                  <img src={item?.image} alt="Customer" />
+                </div>
+              );
+            })}
+          <div className="py-2 px-6 text-white font-bold footer_background h-full w-52 flex justify-center items-center text-center">
+            25K + Trusted Worldwide Happy Customer
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto">
+        <div className="text-4xl text_blue font-bold">Client Feedback</div>
+        <span className="footer_background w-10 h-2 block mt-1"></span>
+        <div className="relative z-10 mt-8 mb-12">
+          <Slider {...serviceSettings} className="slider client_slider">
+            {clientFeedback &&
+              clientFeedback?.map((item, index) => (
+                <div
+                  key={index}
+                  className="relative z-0 flex flex-col h-72"
+                >
+                  <img
+                    src={item?.image}
+                    className="absolute z-0 h-full w-full expert_image object-cover"
+                    alt={item?.name}
+                  />
+                  <div className="card_text relative z-10 h-full w-full">
+                    <div className="bg-gradient-to-t absolute z-0 transition-all opacity-40 w-full from-black to-black h-72"></div>
+                    <div className="absolute z-10 justify-end gap-2 p-4 flex flex-col h-full w-full">
+                      <div className="text-white font-semibold opacity-100 flex gap-2 text-sm">
+                        {item?.name}
+                      </div>
+                      <div className="text-white text-sm opacity-100">
+                        {item?.description}
+                      </div>
+                      <Link to={"#"}>
+                        <div className="text-white flex gap-4 justify-between items-center footer_background underline px-2 py-1 w-32">
+                          Read More
+                          <FaChevronRight color="#fff" />
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </Slider>
+        </div>
+      </div>
+      <div className="relative my-4">
+        <Slider {...serviceSettings}>
+          {achievement?.map((item, index) => (
+            <img
+              key={index}
+              src={item?.image}
+              alt="Tura Research Achievement"
+              className="w-40 h-40"
+            />
+          ))}
+        </Slider>
       </div>
     </>
   );
