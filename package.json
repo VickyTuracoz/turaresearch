@@ -1,7 +1,6 @@
 {
   "name": "turacozapp",
   "version": "1.0.0",
-  "main": "App.js",
   "description": "",
   "scripts": {
     "start": "parcel index.html",
