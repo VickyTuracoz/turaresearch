@@ -29,24 +29,26 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto bg-white">
-          <div className="py-2 flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center">
-            <Link className="font-semibold text-xl drop-shadow-2xl" to="/">
-              <img src={logo} alt="TuraResearch" className="w-36 my-2" />
-            </Link>
-            <div className="flex text_blue w-full md:w-1/2 bg-slate-100">
-              <input
-                type="text"
-                className="w-full px-2 py-1 text_blue bg-slate-100"
-                placeholder="Search for subject or person"
-              />
-              <select name="search" id="search" className="bg-slate-100 py-1">
-                <option value="All categories">All categories</option>
-                <option value="New categories">New categories</option>
-                <option value="Old categories">Old categories</option>
-              </select>
-              <div className="background_color px-2 py-1 flex items-center">
-                <IoIosSearch color="white" size={20} />
+        <div className="bg-white">
+          <div className="container mx-auto">
+            <div className="py-2 flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center">
+              <Link className="font-semibold text-xl drop-shadow-2xl" to="/">
+                <img src={logo} alt="TuraResearch" className="w-36 my-2" />
+              </Link>
+              <div className="flex text_blue w-full md:w-1/2 bg-slate-100">
+                <input
+                  type="text"
+                  className="w-full px-2 py-1 text_blue bg-slate-100"
+                  placeholder="Search for subject or person"
+                />
+                <select name="search" id="search" className="bg-slate-100 py-1">
+                  <option value="All categories">All categories</option>
+                  <option value="New categories">New categories</option>
+                  <option value="Old categories">Old categories</option>
+                </select>
+                <div className="background_color px-2 py-1 flex items-center">
+                  <IoIosSearch color="white" size={20} />
+                </div>
               </div>
             </div>
           </div>
