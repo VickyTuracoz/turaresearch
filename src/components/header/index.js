@@ -10,13 +10,13 @@ import logo from "../../assets/image/logo.png";
 const Header = () => {
   return (
     <>
-      <div className="w-full sticky top-0 bg-white z-50">
+      <div className="w-full sticky top-0 z-50">
         <div className="bg-slate-100">
-          <div className="flex px-12 py-1 justify-between">
+          <div className="flex flex-col lg:flex-row px-4 gap-2 md:px-12 py-1 justify-between">
             <div className="text_blue">
               Singapore | India | USA | Canada | Netherlands
             </div>
-            <div className="flex gap-2 text_blue">
+            <div className="flex flex-col md:flex-row gap-2 text_blue">
               <div className="flex gap-2 items-center">
                 <BiSolidPhoneCall size={20} /> +91 99999 99999 |
               </div>
@@ -29,12 +29,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto">
-          <div className="py-2 flex justify-center md:justify-between items-center">
+        <div className="container mx-auto bg-white">
+          <div className="py-2 flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center">
             <Link className="font-semibold text-xl drop-shadow-2xl" to="/">
               <img src={logo} alt="TuraResearch" className="w-36 my-2" />
             </Link>
-            <div className="flex text_blue w-1/2 bg-slate-100">
+            <div className="flex text_blue w-full md:w-1/2 bg-slate-100">
               <input
                 type="text"
                 className="w-full px-2 py-1 text_blue bg-slate-100"
@@ -52,8 +52,8 @@ const Header = () => {
           </div>
         </div>
         <div className="background_color py-2">
-          <div className="flex text-white justify-between px-12">
-            <div className="text-right w-1/2">
+          <div className="flex flex-col md:flex-row gap-4 text-white justify-between px-4 md:px-12">
+            <div className="text-right w-full md:w-1/2">
               Home | Our Services | Why Choose us | Client Testimonials |
               Resources
             </div>

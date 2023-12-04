@@ -296,9 +296,9 @@ const HomePage = () => {
                   <img
                     src={item?.imageSrc}
                     alt="Tura Research"
-                    className="image-carousal relative z-0"
+                    className="md:h-[600px] h-[300px] relative z-0"
                   />
-                  <div className="flex flex-col absolute z-10 justify-center items-center top-0 left-16 py-12">
+                  <div className="flex flex-col absolute z-10 justify-center items-center top-0 left-4 md:left-16 py-8 md:py-12">
                     <div className="xl:text-4xl text-white drop-shadow-2xl text-2xl text-shadow">
                       Empower | Ensure | Elevate
                     </div>
@@ -486,7 +486,7 @@ const HomePage = () => {
           </div>
           <div>scientific communication and publication needs.</div>
         </div>
-        <div className="flex justify-between gap-8 py-4">
+        <div className="flex flex-col md:flex-row justify-between gap-8 py-4">
           {otherservice &&
             otherservice?.map((item, index) => {
               return (
@@ -593,10 +593,7 @@ const HomePage = () => {
           <Slider {...serviceSettings} className="slider client_slider">
             {clientFeedback &&
               clientFeedback?.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative z-0 flex flex-col h-72"
-                >
+                <div key={index} className="relative z-0 flex flex-col h-72">
                   <img
                     src={item?.image}
                     className="absolute z-0 h-full w-full expert_image object-cover"
