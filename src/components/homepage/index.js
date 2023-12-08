@@ -1,49 +1,48 @@
 import React from "react";
+import { FaChevronRight } from "react-icons/fa";
+import { IoTimeOutline } from "react-icons/io5";
 import { connect } from "react-redux";
-import banner from "../../assets/image/homepageBanner.jpg";
-import banner1 from "../../assets/image/homepageBanner.png";
-import training from "../../assets/image/training.jpg";
-import publication from "../../assets/image/publication.jpg";
-import medicoMarketing from "../../assets/image/medicoMarketing.jpg";
-import journalSubmission from "../../assets/image/journalSubmission.jpg";
-import ai from "../../assets/image/ai.jpg";
-import publicationai from "../../assets/image/publicationai.jpg";
-import design from "../../assets/image/design.svg";
-import writing from "../../assets/image/writing.svg";
-import editing from "../../assets/image/editing.jpg";
-import review from "../../assets/image/review.svg";
-import education from "../../assets/image/education.svg";
-import rating from "../../assets/image/rating.svg";
-import regulatory from "../../assets/image/regulatory.svg";
-import reviewPublication from "../../assets/image/reviewPublication.svg";
-import quality from "../../assets/image/quality.svg";
-import grammarly from "../../assets/image/grammarly.jpg";
-import turnitin from "../../assets/image/turnitin.jpg";
-import x9 from "../../assets/image/x9.jpg";
-import Semantic from "../../assets/image/Semantic.jpg";
-import namrata from "../../assets/image/drNamrata.jpg";
-import shruti from "../../assets/image/shruti.jpg";
-import team1 from "../../assets/image/team1.png";
-import team2 from "../../assets/image/team2.png";
-import team3 from "../../assets/image/team3.png";
-import serviceimage from "../../assets/image/service.png";
-import customer1 from "../../assets/image/customer1.jpg";
-import customer2 from "../../assets/image/customer2.jpg";
-import customer3 from "../../assets/image/customer3.jpg";
-import customer4 from "../../assets/image/customer4.jpg";
-import customer5 from "../../assets/image/customer5.jpg";
-import customer6 from "../../assets/image/customer6.jpg";
-import customer7 from "../../assets/image/customer7.jpg";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Semantic from "../../assets/image/Semantic.webp";
 import achievement1 from "../../assets/image/achievement1.jpg";
 import achievement2 from "../../assets/image/achievement2.jpg";
 import achievement3 from "../../assets/image/achievement3.jpg";
 import achievement4 from "../../assets/image/achievement4.jpg";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
-import { IoTimeOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import { FaChevronRight } from "react-icons/fa";
+import ai from "../../assets/image/ai.webp";
+import customer1 from "../../assets/image/customer1.webp";
+import customer2 from "../../assets/image/customer2.webp";
+import customer3 from "../../assets/image/customer3.webp";
+import customer4 from "../../assets/image/customer4.webp";
+import customer5 from "../../assets/image/customer5.webp";
+import customer6 from "../../assets/image/customer6.webp";
+import customer7 from "../../assets/image/customer7.webp";
+import design from "../../assets/image/design.svg";
+import namrata from "../../assets/image/drNamrata.webp";
+import editing from "../../assets/image/editing.webp";
+import education from "../../assets/image/education.svg";
+import grammarly from "../../assets/image/grammarly.webp";
+import banner from "../../assets/image/homepageBanner.webp";
+import journalSubmission from "../../assets/image/journalSubmission.webp";
+import medicoMarketing from "../../assets/image/medicoMarketing.webp";
+import publication from "../../assets/image/publication.webp";
+import publicationai from "../../assets/image/publicationai.webp";
+import quality from "../../assets/image/quality.svg";
+import rating from "../../assets/image/rating.svg";
+import regulatory from "../../assets/image/regulatory.svg";
+import review from "../../assets/image/review.svg";
+import reviewPublication from "../../assets/image/reviewPublication.svg";
+import serviceimage from "../../assets/image/service.webp";
+import shruti from "../../assets/image/shruti.webp";
+import team1 from "../../assets/image/team1.webp";
+import team2 from "../../assets/image/team2.webp";
+import team3 from "../../assets/image/team3.webp";
+import training from "../../assets/image/training.webp";
+import turnitin from "../../assets/image/turnitin.webp";
+import writing from "../../assets/image/writing.svg";
+import x9 from "../../assets/image/x9.webp";
 
 const HomePage = () => {
   let settings = {
@@ -62,13 +61,13 @@ const HomePage = () => {
       imageSrc: banner,
     },
     {
-      imageSrc: banner1,
+      imageSrc: banner,
     },
     {
-      imageSrc: banner1,
+      imageSrc: banner,
     },
     {
-      imageSrc: banner1,
+      imageSrc: banner,
     },
   ];
 
