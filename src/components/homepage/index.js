@@ -296,7 +296,7 @@ const HomePage = () => {
                   <img
                     src={item?.imageSrc}
                     alt="Tura Research"
-                    className="md:h-[600px] h-[300px] relative z-0"
+                    className="md:h-[600px] h-[300px] w-full relative z-0"
                   />
                   <div className="flex flex-col absolute z-10 justify-center items-center top-0 left-4 md:left-16 py-8 md:py-12">
                     <div className="xl:text-4xl text-white drop-shadow-2xl text-2xl text-shadow">
